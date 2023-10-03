@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blog?</title>
+    </head>
+
+    
+      
+
+
+<p> </p>
+
+    <body>
+        <div id="header"></div></div> 
+        <div id="navigation"> 
+            <ul>
+                <li><a href="/" class="btn btn-success">Home</a></li>
+                <li><a href="/articles/about_me" class="btn btn-success">About Me</a></li>
+                <li><a href="/articles/contact_me" class="btn btn-success">Contact Me</a></li>
+                <li><a href="/articles/pen_test" class="btn btn-success">Snake</a></li>
+                <li><a href="/articles/dissertation" class="btn btn-success">Dissertation</a></li>
+            </ul>
+        </div> 
+        <div class="column1of3"> 
+            <div class="container">
+                <h1 class="mb-4">Blog Articles</h1>
+                <a href="/articles/new" class="btn btn-success"> New Article</a>
+                <% articles.forEach(article => { %>
+                    <div class ="card mt-4">
+                        <div class="card-body">
+                            <h4 class="card-title"> <%= article.title %> </h4>
+                            <h4 class="card-title"> <%= article.description %> </h4>
+                            <h4 class="card-title"> <%= article.markdown %> </h4>
+                            <h4 class="card-title"> <%= article.createdAt%> </h4>
+                            <div class="card-subtitle text-muted mb-2"></div>
+           
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div > 
+        <div class="column2of3"> column 2 of 3 </div > 
+        <div class="column3of3"> column 3 of 3 </div > 
+        <div id="footer"> 
+            <p>Credit to the following Youtubers who's videos have assisted the creation of this website</p>
+            <p>Web Dev Simplified: https://www.youtube.com/watch?v=1NrHkjlWVhM</p>
+        </div > 
+        
+
+    the code in important goes here
+        
+    </body>
+</html>
